@@ -1,0 +1,105 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Booking Airport Transfer</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="assets/bulma.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="assets/css/mdtimepicker.css">
+    <link rel="stylesheet" href="assets/bat.css" type="text/css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <script type="text/javascript" src="assets/sass/extensions/dist/bulma-calendar.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="assets/js/mdtimepicker.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <section class="hero is-info is-fullheight hero-background">
+      <div class="hero-head">
+        <nav class="navbar nav-bat">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="">
+                <img src="assets/img/logo.png">
+              </a>
+              <span class="navbar-burger burger" data-target="navbarMenuHeroB" aria-label="menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+            <div id="navbarMenuHeroB" class="navbar-menu">
+              <div class="navbar-end">
+                <a class="navbar-item">
+                  <div class="field is-grouped">
+                    <span class="icon">
+                      <i class="fas fa-mobile-alt meicobat"></i> 
+                    </span>
+                    <span>+905069221901</span>
+                  </div>
+                </a>
+                <a class="navbar-item">
+                  <div class="field is-grouped">
+                    <span class="icon">
+                      <i class="fas fa-mobile-alt meicobat"></i> 
+                    </span>
+                    <span>+13478348842</span>
+                  </div>
+                </a>
+                <a class="navbar-item">
+                  <div class="field is-grouped">
+                    <span class="icon">
+                      <i class="far fa-envelope meicobat"></i> 
+                    </span>
+                    <span>reservations@bookingairporttransfer.com</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="hero-body">
+        <div class="container">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+          </div>
+        </div>
+    </section>
+    <script>
+        // Navbar Mobile
+        document.addEventListener('DOMContentLoaded', function () {
+
+            // Get all "navbar-burger" elements
+            var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+
+                // Add a click event on each of them
+                $navbarBurgers.forEach(function ($el) {
+                    $el.addEventListener('click', function () {
+
+                        // Get the target from the "data-target" attribute
+                        var target = $el.dataset.target;
+                        var $target = document.getElementById(target);
+
+                        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+                        $el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+
+                    });
+                });
+            }
+
+        });
+    </script>
+    </form>
+</body>
+</html>

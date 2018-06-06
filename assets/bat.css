@@ -1,0 +1,90 @@
+.hero-background {
+	background-image: url("img/heroist.jpg");
+}
+
+.nav-bat {
+	margin-top: 20px;
+}
+
+.meicobat {
+	margin-right: 10px;
+}
+
+.mainbookarea {
+	background-color: #03030366;
+	padding: 30px;
+}
+.ft-white {
+	color: #FFF;
+}
+
+.ft-hr {
+	display: block;
+	padding-top: 15px;
+	border-top: 1px solid rgba(255,255,255,0.4);
+	margin-bottom: 15px;
+}
+
+.BooknowButton {
+	width: 130px;
+	height: 130px;
+	font-size: 22px;
+line-height: 1.5;
+padding: 5px 0;
+margin: 0px auto;
+display: flex;
+}
+
+/*****************************************/
+
+.nav-bat-bot {
+	margin-bottom: 10px;
+	background-color: rgb(10, 44, 104) !important;
+}
+
+.nav-bat-bot .navbar-brand img {
+	margin-top: 4px;
+}
+
+.hero-light-bg {
+	background-color: #f2f2f2 !important;
+}
+
+.secondbookarea {
+	background-color: #065181e6;
+	padding: 30px;
+}
+
+.secnavarea {
+	background-color: #00a8a2b3;
+	padding: 5px 30px;
+}
+
+.step-item.is-completed .step-details {
+	color: #209cee;
+}
+.step-item.is-active .step-details {
+	color: #000;
+}
+
+.ft-hr2 {
+	display: block;
+	padding-top: 15px;
+	border-top: 1px solid rgba(255,255,255,0.4);
+	margin-bottom: 12px;
+}
+.secondprice {
+	font-size: 1.6rem;
+}
+
+.secondprice span {
+	font-weight: 700;
+	color: #deff03;
+}
+.secondprice small {
+	font-size: 1rem;
+}
+
+.image.is-2by1 {
+	padding-top: 46%;
+}
